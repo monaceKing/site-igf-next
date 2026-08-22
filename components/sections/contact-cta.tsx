@@ -1,27 +1,14 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useActionState } from "react";
 import { sendContactMessage, type ContactState } from "@/lib/actions";
 import { LedgerDivider } from "@/components/ui/ledger-divider";
 import { CONTACT_INFO } from "@/lib/constants";
 
 const initialState: ContactState = { success: false, message: "" };
 
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <button
-      type="submit"
-      disabled={pending}
-      className="w-full justify-center rounded-[10px] bg-accent px-5 py-[11px] text-sm font-semibold text-accent-ink transition hover:brightness-[1.06] disabled:opacity-60"
-    >
-      {pending ? "Envoi en cours..." : "Envoyer la demande"}
-    </button>
-  );
-}
-
 export function ContactCta() {
-  const [state, formAction] = useFormState(sendContactMessage, initialState);
+  const [state, formAction, pending] = useActionState(sendContactMessage, initialState);
 
   return (
     <>
@@ -78,7 +65,13 @@ export function ContactCta() {
                   className="h-20 w-full resize-none rounded-[9px] border border-line bg-paper px-3.5 py-[11px] text-sm text-ink"
                 />
               </div>
-              <SubmitButton />
+              <button
+                type="submit"
+                disabled={pending}
+                className="w-full justify-center rounded-[10px] bg-accent px-5 py-[11px] text-sm font-semibold text-accent-ink transition hover:brightness-[1.06] disabled:opacity-60"
+              >
+                {pending ? "Envoi en cours..." : "Envoyer la demande"}
+              </button>
               {state.message && (
                 <p className={`mt-3 text-[13px] ${state.success ? "text-accent" : "text-red-500"}`}>
                   {state.message}
