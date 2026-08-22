@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: 248 247 242;
+  --paper-2: 255 255 255;
+  --ink: 11 21 58;
+  --ink-soft: 90 100 133;
+  --accent: 15 160 155;
+  --accent-ink: 255 255 255;
+  --gold: 199 138 46;
+  --line: 224 219 206;
+  color-scheme: light;
+}
+
+.dark {
+  --paper: 9 16 44;
+  --paper-2: 15 25 61;
+  --ink: 240 243 250;
+  --ink-soft: 154 165 199;
+  --accent: 56 214 207;
+  --accent-ink: 9 16 44;
+  --gold: 224 165 84;
+  --line: 34 49 92;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(var(--paper));
+  color: rgb(var(--ink));
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 26s linear infinite;
+}
