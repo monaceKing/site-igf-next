@@ -10,7 +10,7 @@ export function Hero() {
             Partenaire agréé Sage100 · Odoo
           </div>
           <h1 className="mt-[18px] font-display text-[34px] leading-[1.08] tracking-[-0.01em] md:text-[54px]">
-            L&apos;ERP qui tient vos comptes, <em className="text-accent not-italic italic">votre stock</em> et vos
+            L&apos;ERP qui tient vos comptes, <em className="text-accent not-italic">votre stock</em> et vos
             équipes au même rythme.
           </h1>
           <p className="mt-[22px] max-w-[480px] text-[17px] leading-[1.65] text-ink-soft">

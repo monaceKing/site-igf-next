@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: "IGF-SARL",
   description:
     "IGF accompagne les entreprises sénégalaises dans leur transformation digitale : comptabilité, ERP, RH et cloud. Partenaire agréé Sage100 et Odoo.",
-  metadataBase: new URL("https://www.igf-sarl.sn"),
+  metadataBase: new URL("https://www.igf-sn.com"),
   openGraph: {
     title: "IGF-SARL",
     description:

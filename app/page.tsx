@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/layout/navbar";
+// import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/sections/hero";
 import { TrustBar } from "@/components/sections/trustbar";
@@ -8,6 +8,7 @@ import { Domains } from "@/components/sections/domains";
 import { Team } from "@/components/sections/team";
 import { Events } from "@/components/sections/events";
 import { ContactCta } from "@/components/sections/contact-cta";
+import Navbar from "@/components/layout/navbar";
 
 export default function HomePage() {
   return (

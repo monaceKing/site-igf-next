@@ -8,18 +8,24 @@ export const NAV_LINKS = [
 ];
 
 export const CONTACT_INFO = {
-  phone: "+221 33 XXX XX XX",
-  email: "contact@igf-sarl.sn",
+  phone: "+221 33 864 12 72",
+  email: "contacts@igf-sn.com",
   location: "Dakar, Sénégal",
 };
 
 export const TRUSTED_BY = [
-  "SENELEC",
-  "SONATEL",
-  "BICIS",
-  "CBAO",
-  "Port de Dakar",
-  "Auchan Sénégal",
+  { name: "AUBI", logo: "/images/AUBI.png" },
+  { name: "BME", logo: "/images/BME.png" },
+  { name: "BaEauBab", logo: "/images/BaEauBab.png" },
+  { name: "Codex", logo: "/images/Codex.jpg" },
+  { name: "Confisen", logo: "/images/confisene.png" },
+  { name: "Fary Industrie", logo: "/images/fary_industrie.png" },
+  { name: "JahOil", logo: "/images/jahOil.png" },
+  { name: "Oumou Group", logo: "/images/oumou_logo.png" },
+  { name: "Neptune", logo: "/images/neptune.png" },
+  { name: "Titan Oil", logo: "/images/titanOil.png" },
+  { name: "Touba Oil", logo: "/images/toubaOil.png" },
+  { name: "Vialogistics", logo: "/images/vialogistics.png" },
 ];
 
 export const PARTNERS = [
@@ -30,7 +36,8 @@ export const PARTNERS = [
   },
   {
     name: "Odoo",
-    tagline: "Un ERP modulaire pour piloter toute l'entreprise, du CRM au stock.",
+    tagline:
+      "Un ERP modulaire pour piloter toute l'entreprise, du CRM au stock.",
     items: ["CRM & ventes", "Inventaire & stock", "Ressources humaines"],
   },
 ];
@@ -57,8 +64,7 @@ export const DOMAINS = [
   {
     index: "04 / RH",
     title: "Gestion des talents",
-    description:
-      "Modules RH pour centraliser recrutement, paie et évaluation.",
+    description: "Modules RH pour centraliser recrutement, paie et évaluation.",
   },
 ];
 
@@ -103,7 +109,7 @@ export const EVENTS = [
 ];
 
 export const KPIS = [
-  { value: "120+", label: "Entreprises accompagnées" },
+  { value: "50+", label: "Entreprises accompagnées" },
   { value: "15 ans", label: "D'expertise Sage & Odoo" },
 ];
 
