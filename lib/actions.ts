@@ -32,9 +32,8 @@ export async function sendContactMessage(
 
   try {
     const { error } = await resend.emails.send({
-      from: "IGF SARL <onboarding@resend.dev>",
-      // to: ["contacts@igf-sn.com"],
-      to: ["igfdev0@gmail.com"],
+      from: "IGF Site Web <onboarding@resend.dev>",
+      to: ["contacts@igf-sn.com"],
       replyTo: email,
       subject: `Nouvelle demande de devis — ${name}`,
       text: `Nom : ${name}\nEmail : ${email}\n\nMessage :\n${message}`,

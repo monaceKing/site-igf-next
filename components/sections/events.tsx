@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LedgerDivider } from "@/components/ui/ledger-divider";
 import { EVENTS } from "@/lib/constants";
 
@@ -20,16 +21,20 @@ export function Events() {
           {EVENTS.map((event) => (
             <div
               key={event.title}
-              className={`relative overflow-hidden rounded-2xl border border-line bg-gradient-to-br from-accent/20 to-gold/20 ${
+              className={`relative overflow-hidden rounded-2xl border border-line ${
                 event.featured ? "col-span-2 row-span-1 md:row-span-2" : ""
               }`}
             >
+              <Image
+                src={event.image}
+                alt={event.title}
+                fill
+                sizes={event.featured ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 25vw, 50vw"}
+                className="object-cover"
+              />
               <span className="absolute left-3 top-3 z-10 rounded-full bg-paper/80 px-2.5 py-1 font-mono text-[10.5px] uppercase tracking-[.06em] backdrop-blur">
                 {event.category}
               </span>
-              <div className="absolute inset-0 flex items-center justify-center font-display text-ink-soft/55">
-                {event.category[0]}
-              </div>
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-3.5">
                 <h4 className={`font-display font-medium text-paper ${event.featured ? "text-[19px]" : "text-[14.5px]"}`}>
                   {event.title}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LedgerDivider } from "@/components/ui/ledger-divider";
 
 export function DirectorWord() {
@@ -6,8 +7,14 @@ export function DirectorWord() {
       <LedgerDivider index="01" label="Le mot du directeur" />
       <section>
         <div className="grid gap-10 rounded-[20px] border border-line bg-paper-2 p-10 md:grid-cols-[220px_1fr]">
-          <div className="flex aspect-square w-full items-center justify-center rounded-2xl bg-gradient-to-br from-accent/35 to-gold/35 font-display text-4xl text-accent">
-            DD
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-line">
+            <Image
+              src="/team/Diop1.jpeg"
+              alt="Doudou Diop"
+              fill
+              sizes="220px"
+              className="object-cover object-top"
+            />
           </div>
           <div>
             <blockquote className="font-display text-xl italic leading-[1.5]">
@@ -15,7 +22,7 @@ export function DirectorWord() {
               sans complexité inutile, avec des outils qui grandissent avec elles. »
             </blockquote>
             <div className="mt-[18px] text-sm font-semibold">Doudou Diop</div>
-            <div className="text-[13px] text-ink-soft">Directeur Général, IGF-SARL</div>
+            <div className="text-[13px] text-ink-soft">Directeur Général, IGF SARL</div>
           </div>
         </div>
       </section>

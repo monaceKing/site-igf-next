@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-// Next.js loads this stylesheet at runtime; TypeScript does not need to type-check it.
-// @ts-expect-error CSS side-effect imports are handled by Next.js.
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -49,7 +47,8 @@ export default function RootLayout({
       className={`${fraunces.variable} ${inter.variable} ${jbMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased" suppressHydrationWarning>
+        {" "}
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

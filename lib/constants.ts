@@ -15,15 +15,15 @@ export const CONTACT_INFO = {
 
 export const TRUSTED_BY = [
   { name: "AUBI", logo: "/images/AUBI.png" },
-  { name: "BME", logo: "/images/BME.png" },
+  { name: "BME", logo: "/images/BMELogo.png" },
   { name: "BaEauBab", logo: "/images/BaEauBab.png" },
-  { name: "Codex", logo: "/images/Codex.jpg" },
+  { name: "Codex", logo: "/images/CodexLogo.jpg" },
   { name: "Confisen", logo: "/images/confisene.png" },
   { name: "Fary Industrie", logo: "/images/fary_industrie.png" },
   { name: "JahOil", logo: "/images/jahOil.png" },
-  { name: "Oumou Group", logo: "/images/oumou_logo.png" },
-  { name: "Neptune", logo: "/images/neptune.png" },
-  { name: "Titan Oil", logo: "/images/titanOil.png" },
+  { name: "Oumou Group", logo: "/images/OuMouLog.png" },
+  { name: "Neptune", logo: "/images/neptuneLogo.png" },
+  { name: "Titan Oil", logo: "/images/titanOilLogo.png" },
   { name: "Touba Oil", logo: "/images/toubaOil.png" },
   { name: "Vialogistics", logo: "/images/vialogistics.png" },
 ];
@@ -69,42 +69,67 @@ export const DOMAINS = [
 ];
 
 export const TEAM = [
-  { initials: "AS", name: "Aïssatou Sow", role: "Consultante Sage100" },
-  { initials: "MF", name: "Moussa Fall", role: "Intégrateur Odoo" },
-  { initials: "KD", name: "Khadija Diallo", role: "Responsable Formation" },
-  { initials: "IN", name: "Ibrahima Ndiaye", role: "Support technique" },
+  {
+    initials: "MT",
+    name: "Mourtalla Top",
+    role: "Consultant Sage100",
+    image: "/team/Talla1.jpeg",
+  },
+  {
+    initials: "MD",
+    name: "Mohamadou Diagne",
+    role: "Intégrateur Odoo",
+    image: "/team/Modou1.jpeg",
+  },
+  {
+    initials: "MG",
+    name: "Moussa Gueye",
+    role: "Responsable IT",
+    image: "/team/Moussa1.jpeg",
+  },
+  {
+    initials: "JA",
+    name: "Juste Amour MAVOUNGOU M.",
+    role: "Responsable Projets",
+    image: "/team/juste2.jpeg",
+  },
 ];
 
 export const EVENTS = [
   {
     category: "Formation",
-    title: "Certification Sage100 — Cohorte 2024",
-    meta: "Dakar · Mars 2024",
+    title: "Certification Sage100 — Cohorte 2026",
+    meta: "Dakar · Mars 2026",
     featured: true,
+    image: "/events/certification_sage100.jpeg",
   },
   {
     category: "Séminaire",
     title: "Journée Odoo Entreprises",
-    meta: "Dakar · Juin 2024",
-    featured: false,
+    meta: "Dakar · Juin 2026",
+    featured: true,
+    image: "/events/certification_Odoo.jpeg",
   },
   {
     category: "Atelier",
     title: "Atelier gestion RH",
-    meta: "Thiès · Sept. 2024",
-    featured: false,
+    meta: "Thiès · Sept. 2026",
+    featured: true,
+    image: "/events/atelier-rh.jpg",
   },
-  {
-    category: "Formation",
-    title: "Initiation comptabilité digitale",
-    meta: "Dakar · Nov. 2024",
-    featured: false,
-  },
+  // {
+  //   category: "Formation",
+  //   title: "Initiation comptabilité digitale",
+  //   meta: "Dakar · Nov. 2026",
+  //   featured: false,
+  //   image: "/events/comptabilite-digitale.jpg",
+  // },
   {
     category: "Portes ouvertes",
     title: "Journée portes ouvertes IGF",
-    meta: "Dakar · Jan. 2025",
-    featured: false,
+    meta: "Dakar · Jan. 2026",
+    featured: true,
+    image: "/events/portes-ouvertes.jpeg",
   },
 ];
 
