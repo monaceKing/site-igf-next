@@ -31,11 +31,13 @@ export const TRUSTED_BY = [
 export const PARTNERS = [
   {
     name: "Sage 100",
+    logo: "/partners/sage100.png",
     tagline: "La référence en gestion comptable et commerciale pour PME.",
     items: ["Comptabilité & finance", "Gestion commerciale", "Immobilisations"],
   },
   {
     name: "Odoo",
+    logo: "/partners/odoo.png",
     tagline:
       "Un ERP modulaire pour piloter toute l'entreprise, du CRM au stock.",
     items: ["CRM & ventes", "Inventaire & stock", "Ressources humaines"],
@@ -47,7 +49,7 @@ export const DOMAINS = [
     index: "01 / Informatique",
     title: "Infogérance & Cloud",
     description:
-      "Infrastructure, maintenance et hébergement pensés pour la continuité de service.",
+      "Infrastructure, maintenance et Développement d'applications web et mobile.",
   },
   {
     index: "02 / Finance",
@@ -70,10 +72,10 @@ export const DOMAINS = [
 
 export const TEAM = [
   {
-    initials: "MT",
-    name: "Mourtalla Top",
-    role: "Consultant Sage100",
-    image: "/team/Talla1.jpeg",
+    initials: "AC",
+    name: "Adama Coulibaly",
+    role: "Ingénieur Système et Réseau",
+    image: "/team/Adama.jpeg",
   },
   {
     initials: "MD",
@@ -84,12 +86,12 @@ export const TEAM = [
   {
     initials: "MG",
     name: "Moussa Gueye",
-    role: "Responsable IT",
+    role: "Développeur Full-Stack & Data",
     image: "/team/Moussa1.jpeg",
   },
   {
     initials: "JA",
-    name: "Juste Amour MAVOUNGOU M.",
+    name: "Juste Amour MAVOUNGOU-M.",
     role: "Responsable Projets",
     image: "/team/juste2.jpeg",
   },
@@ -115,7 +117,7 @@ export const EVENTS = [
     title: "Atelier gestion RH",
     meta: "Thiès · Sept. 2026",
     featured: true,
-    image: "/events/atelier-rh.jpg",
+    image: "/events/Atelier_IT.jpeg",
   },
   // {
   //   category: "Formation",
@@ -125,11 +127,11 @@ export const EVENTS = [
   //   image: "/events/comptabilite-digitale.jpg",
   // },
   {
-    category: "Portes ouvertes",
-    title: "Journée portes ouvertes IGF",
+    category: "La Team",
+    title: "Equipe IGF",
     meta: "Dakar · Jan. 2026",
     featured: true,
-    image: "/events/portes-ouvertes.jpeg",
+    image: "/events/We_all.jpeg",
   },
 ];
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LedgerDivider } from "@/components/ui/ledger-divider";
 import { PARTNERS } from "@/lib/constants";
 
@@ -21,7 +22,18 @@ export function Partners() {
               <span className="inline-block rounded-full bg-accent/10 px-2.5 py-1 font-mono text-[11px] text-accent">
                 Partenaire agréé
               </span>
-              <h3 className="mt-3.5 font-display text-[21px]">{partner.name}</h3>
+              <div className="mt-3.5 flex items-center justify-between gap-4">
+                <h3 className="font-display text-[21px]">{partner.name}</h3>
+                <div className="relative h-8 w-20 flex-shrink-0">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    sizes="160px"
+                    className="object-contain object-right"
+                  />
+                </div>
+              </div>
               <p className="mt-2.5 text-sm text-ink-soft">{partner.tagline}</p>
               <ul className="mt-4 text-sm text-ink-soft">
                 {partner.items.map((item) => (
