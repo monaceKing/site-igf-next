@@ -91,7 +91,7 @@ export const TEAM = [
   },
   {
     initials: "BD",
-    name: "Binta Diallo",
+    name: "Bineta Diallo",
     role: "Assistante de Direction",
     image: "/team/Binta.jpeg",
   },
