@@ -72,10 +72,10 @@ export const DOMAINS = [
 
 export const TEAM = [
   {
-    initials: "AC",
-    name: "Adama Coulibaly",
-    role: "Ingénieur Système et Réseau",
-    image: "/team/Adama.jpeg",
+    initials: "MT",
+    name: "Mourtada TOP",
+    role: "Intégrateur SAGE100",
+    image: "/team/Talla1.jpeg",
   },
   {
     initials: "MD",
@@ -90,10 +90,10 @@ export const TEAM = [
     image: "/team/Moussa1.jpeg",
   },
   {
-    initials: "JA",
-    name: "Juste Amour MAVOUNGOU-M.",
-    role: "Responsable Projets",
-    image: "/team/juste2.jpeg",
+    initials: "BD",
+    name: "Binta Diallo",
+    role: "Assistante de Direction",
+    image: "/team/Binta.jpeg",
   },
 ];
 
@@ -119,13 +119,7 @@ export const EVENTS = [
     featured: true,
     image: "/events/Atelier_IT.jpeg",
   },
-  // {
-  //   category: "Formation",
-  //   title: "Initiation comptabilité digitale",
-  //   meta: "Dakar · Nov. 2026",
-  //   featured: false,
-  //   image: "/events/comptabilite-digitale.jpg",
-  // },
+
   {
     category: "La Team",
     title: "Equipe IGF",

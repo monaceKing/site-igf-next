@@ -15,7 +15,7 @@ export function Team() {
             Une équipe locale, disponible et impliquée.
           </h2>
         </div>
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-4">
           {TEAM.map((member) => (
             <div key={member.name}>
               <div className="relative mb-3.5 aspect-[4/5] overflow-hidden rounded-2xl border border-line bg-paper-2">
@@ -23,7 +23,7 @@ export function Team() {
                   src={member.image}
                   alt={member.name}
                   fill
-                  sizes="(min-width: 768px) 25vw, 50vw"
+                  sizes="(min-width: 768px) 25vw, 100vw"
                   className="object-cover object-top"
                 />
               </div>
