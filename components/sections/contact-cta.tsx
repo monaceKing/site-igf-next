@@ -1,14 +1,8 @@
 "use client";
-
-import { useActionState } from "react";
-import { sendContactMessage, type ContactState } from "@/lib/actions";
 import { LedgerDivider } from "@/components/ui/ledger-divider";
 import { CONTACT_INFO } from "@/lib/constants";
 
-const initialState: ContactState = { success: false, message: "" };
-
 export function ContactCta() {
-  const [state, formAction, pending] = useActionState(sendContactMessage, initialState);
 
   return (
     <>
